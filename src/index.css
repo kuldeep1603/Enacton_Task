@@ -1,13 +1,423 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* fonts  */
+    --primary-font  : 'Livvic', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --tertiary-font : "Poppins", sans-serif;
+
+
+    /* color */
+    --primary-color  : #DB4444;
+    --secondary-color: #F5F5F5;
+    --tertiary-color : #D9D9D9;
+    --white-color    : #ffffff;
+    --star-color     : #FFAD33;
+    --green-color    : #00FF66;
+    --light-black    : rgba(0, 0, 0, 0.4);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    margin         : 0;
+    padding        : 0;
+    box-sizing     : none;
+    outline        : none;
+    text-decoration: none;
+    list-style     : none;
+    letter-spacing : 0.3px;
 }
+
+body {
+    font-family        : var(--primary-font) !important;
+    margin             : 0;
+    padding            : 0;
+    box-sizing         : none;
+    outline            : none;
+    /* background-color: var(--primary-color) !important; */
+    overflow-x         : hidden;
+    position           : relative;
+    user-select        : none;
+    /* color           : var(--white-color); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+b,
+li,
+ul,
+ol,
+a {
+    margin            : 0;
+    padding           : 0;
+    box-sizing        : none;
+    outline           : none;
+    list-style        : none;
+    letter-spacing    : 0.5px;
+    text-decoration   : none;
+    font-size         : 16px;
+    /* color          : var(--white-color); */
+}
+
+img {
+    width : 100%;
+    height: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius   : 2px;
+}
+
+.navbar-toggler:hover,
+.btn-close:hover {
+    box-sizing: none;
+    box-shadow: none;
+    border    : none;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-sizing: none;
+    box-shadow: none;
+    border    : none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* fonts  */
+.primary-font {
+    font-family: var(--primary-font) !important;
+}
+
+.secondary-font {
+    font-family: var(--secondary-font) !important;
+}
+
+.tertiary-font {
+    font-family: var(--tertiary-font) !important;
+}
+
+/* fonts  */
+
+/* bg color  */
+.bg-primary-1 {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secondary-1 {
+    background-color: var(--secondary-color) !important;
+}
+
+.bg-tertiary-1 {
+    background-color: var(--tertiary-color) !important;
+}
+
+/* bg color  */
+
+/* text color  */
+
+.primary-color {
+    color: var(--primary-color) !important;
+}
+
+.secondary-color {
+    color: var(--secondary-color) !important;
+}
+
+.tertiary-color {
+    color: var(--tertiary-color) !important;
+}
+
+.star-color {
+    color: var(--star-color) !important;
+}
+
+.green-color {
+    color: var(--green-color) !important;
+}
+
+.light-black {
+    color: var(--light-black) !important;
+}
+
+/* text color  */
+
+
+/* padding  */
+.section {
+    padding: 70px 0px;
+}
+
+/* padding  */
+
+/* font size  */
+.fs-6a {
+    font-size: 6px !important;
+}
+
+.fs-8 {
+    font-size: 8px;
+}
+
+.fs-10 {
+    font-size: 10px !important;
+}
+
+.fs-12 {
+    font-size: 12px !important;
+}
+
+.fs-13 {
+    font-size: 13px !important;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.fs-15 {
+    font-size: 15px !important;
+}
+
+.fs-16 {
+    font-size: 16px !important;
+}
+
+.fs-17 {
+    font-size: 17px !important;
+}
+
+.fs-18 {
+    font-size: 18px !important;
+}
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.fs-22 {
+    font-size: 22px !important;
+}
+
+.fs-24 {
+    font-size: 24px !important;
+}
+
+.fs-26 {
+    font-size: 26px !important;
+}
+
+.fs-28 {
+    font-size: 28px !important;
+}
+
+.fs-30 {
+    font-size: 30px !important;
+}
+
+.fs-32 {
+    font-size: 32px !important;
+}
+
+.fs-34 {
+    font-size: 34px !important;
+}
+
+.fs-36 {
+    font-size: 36px !important;
+}
+
+.fs-38 {
+    font-size: 38px !important;
+}
+
+.fs-40 {
+    font-size: 40px !important;
+}
+
+.fs-42 {
+    font-size: 42px !important;
+}
+
+.fs-44 {
+    font-size: 44px !important;
+}
+
+.fs-46 {
+    font-size: 46px !important;
+}
+
+.fs-48 {
+    font-size: 48px !important;
+}
+
+.fs-50 {
+    font-size: 50px !important;
+}
+
+/* font size  */
+
+
+
+/* font weight  */
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/* font weight  */
+
+a {
+    text-decoration: none !important;
+}
+
+/* form  */
+
+.form-control,
+.form-select {
+    padding          : 8px 20px !important;
+    border           : 1px solid #444 !important;
+    color            : #000 !important;
+    text-transform   : capitalize;
+    font-weight      : 600;
+    letter-spacing   : 1px;
+    /* background    : #202020 !important; */
+    font-family      : var(--tertiary-font);
+}
+
+.form-control:focus,
+.form-control:hover,
+.form-select:focus,
+.form-select:hover,
+.form-check-input:focus,
+.form-check-input:hover {
+    box-shadow: none !important;
+    border    : 1px solid #444 !important;
+}
+
+
+
+label {
+   text-transform: capitalize;
+   font-weight: 400;
+}
+
+/* form  */
+
+
+/* swiper  */
+.swiper {
+    width : 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align     : center;
+    font-size      : 18px;
+    background     : #fff;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.swiper-slide img {
+    display   : block;
+    width     : 100%;
+    height    : 100%;
+    object-fit: cover;
+}
+
+/* swiper  */
+
+/* bg img  */
+.bg-img {
+    background-repeat  : no-repeat;
+    background-position: center center;
+    background-size    : cover;
+}
+
+/* bg img  */
+
+
+del {
+    text-decoration: line-through;
+}
+
+.text-ellipsis {
+    white-space  : nowrap;
+    width        : 100%;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+}
+
+/* height  */
+.height-100vh {
+    height: 100vh !important;
+}
+
+.height-100 {
+    height: 100% !important;
+}
+
+/* height  */
+
+/* letter-spacing  */
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+.ls-3 {
+    letter-spacing: 3px;
+}
+
+/* letter-spacing  */

@@ -1,0 +1,16 @@
+.active {
+    color        : var(--primary-color) !important;
+    border-bottom: 1px solid var(--primary-color) !important;
+    font-weight  : 500;
+}
+
+form .wishlist {
+    position: relative;
+}
+
+form .wishlist span {
+    position: absolute;
+    top     : -10px;
+    left    : 20px;
+    padding : 5px 8px;
+}
