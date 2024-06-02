@@ -1,70 +1,46 @@
 # Simple Ecommerce website using react js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
+This project is a comprehensive e-commerce web application that allows users to browse products, add them to a wishlist or shopping cart, and proceed to checkout. The application features sorting, filtering, and search functionalities, with a responsive design and single-page loading effects for a smooth user experience. Product data is stored in local storage to maintain state across sessions.
 
-## Available Scripts
+Features
+Sorting and Filtering: Easily sort and filter products based on various criteria to find exactly what you need.
+Search Functionality: Quickly search for products using the search bar.
+Single Page Loading Effect: Fast and smooth page transitions without full-page reloads.
+Responsive Design: Optimized for all devices, including desktops, tablets, and mobile phones.
+Wishlist: Add products to a wishlist for future reference.
+Add to Cart: Seamlessly add products to the shopping cart and proceed to checkout.
+Cart Page: View and manage the items in your shopping cart.
+Wishlist Page: View and manage the items in your wishlist.
+Local Storage: Product data, wishlist, and cart items are stored in local storage for persistence across sessions.
 
-In the project directory, you can run:
+Technologies Used
+React: A JavaScript library for building user interfaces.
+Redux Toolkit: A set of tools to simplify Redux development.
+React-Redux: Official React bindings for Redux.
+Redux: A predictable state container for JavaScript apps.
+React-Bootstrap: Bootstrap components built with React.
+React Router DOM: Declarative routing for React applications.
+React Toastify: Toast notifications for React applications.
 
-### `npm start`
+Installation
+Clone the repository:
+git clone https://github.com/kuldeep1603/Enacton_Task.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Navigate to the project directory:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+cd Enacton_Task
+Install dependencies:
 
-### `npm test`
+npm install
+Start the development server:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm start
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Usage
+Sorting and Filtering: Use the dropdown menus and filters on the product listing page to sort and filter products.
+Search: Enter keywords into the search bar to find products.
+Add to Wishlist: Click the "Add to Wishlist" button on a product to add it to your wishlist.
+Add to Cart: Click the "Add to Cart" button on a product to add it to your shopping cart.
+View Cart: Click the "Cart" icon to view the items in your shopping cart and proceed to checkout.
+View Wishlist: Click the "Wishlist" icon to view the items in your wishlist.
